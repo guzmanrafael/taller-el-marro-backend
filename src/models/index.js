@@ -6,10 +6,7 @@ const { DB } = require("../config/index");
 const config = DB;
 const db = {};
 
-const sequelize = new Sequelize(
-  process.env.DATABASE_URL,
-  (config.database, config.username, config.password, config)
-);
+const sequelize = new Sequelize(process.env.DATABASE_URL);
 
 fs.readdirSync(__dirname)
   .filter((file) => {
