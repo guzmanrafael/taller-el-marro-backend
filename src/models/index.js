@@ -7,10 +7,8 @@ const config = DB;
 const db = {};
 
 const sequelize = new Sequelize(
-  config.database,
-  config.username,
-  config.password,
-  config
+  process.env.DATABASE_URL,
+  (config.database, config.username, config.password, config)
 );
 
 fs.readdirSync(__dirname)
