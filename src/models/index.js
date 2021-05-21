@@ -3,8 +3,9 @@ const path = require("path");
 const Sequelize = require("sequelize");
 const basename = path.basename(__filename);
 const db = {};
+const config = require("../config/index");
 
-const sequelize = new Sequelize(process.env.DATABASE_URL, {
+const sequelize = new Sequelize(config.database_url, {
   dialect: "postgres",
   protocol: "postgres",
   dialectOptions: {
