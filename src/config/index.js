@@ -9,4 +9,8 @@ module.exports = {
   database_url:
     process.env.DATABASE_URL ||
     "postgres://{username}:{password}@localhost:5432/{dbname}",
+  NODEMAILER: {
+    USER: process.env.USER,
+    PASSWORD: process.env.PASSWORD,
+  },
 };

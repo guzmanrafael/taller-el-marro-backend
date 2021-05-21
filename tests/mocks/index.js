@@ -7,4 +7,7 @@ module.exports = {
 
   WorkShopModelMock: require("./workshop/workshop.model.mock"),
   WorkShopRepositoryMock: require("./workshop/workshop.repository.mock"),
+
+  QuotationModelMock: require("./quotation/quotation.model.mock"),
+  QuotationRepositoryMock: require("./quotation/quotation.repository.mock"),
 };
